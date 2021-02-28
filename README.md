@@ -2,7 +2,8 @@
 
 Shell is a special user program which accepts simple human readable commands from user and translates them so that kernel can understand them. Shell provides an interface to user to use operating system services.
 
-This shell is developed in C.
+### Tech Stack
+>This shell is developed completely in C.
 
 ## Features and Commands
 
@@ -33,7 +34,7 @@ This shell is developed in C.
 > Prints all the commands which were given to the shell along with their validity (i.e. whether they were valid or not) in the current session.
 
 ![Image of Yaktocat](/static/history.png)
-I have used a bit of concept of pipelining to implement this feature to send information from child processes to parent process.
+I have used a bit of concept of pipelining to implement this feature to send information from child processes to parent process. This command marks the invalid commands with RED color and valid commands with BLUE color.
 #### 8. ```prompt```
 > Used to change the prompt name of the shell.
 
@@ -44,7 +45,7 @@ I have used a bit of concept of pipelining to implement this feature to send inf
 
 ![Image of Yaktocat](/static/reset-prompt.png)
 
-## Running the shell
+## How to run ?
 
 Follow these steps to run the shell in your pc.
 
@@ -61,3 +62,12 @@ Follow these steps to run the shell in your pc.
     This will open the shell in your terminal.
 
 **Note** - The commands given in step 2 assumes that you have gcc installed on your system.
+
+## Future Goals
+
+* Adding pipelining in the shell.
+
+* Enhance the ease of use of shell by implementing following -
+    * Command navigation using *up arrow* ⬆️ and *down arrow* ⬇️ key.
+    * Cursor navigation using *left arrow* ⬅️ and *right arrow* ➡️ key.
+    * Function of autocomplete using *tab* key.
