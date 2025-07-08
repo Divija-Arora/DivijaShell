@@ -1,8 +1,8 @@
 #include "utilities.h"
 
-//======= Constants ==========
+//======= Constants ===========
 static int const MAX_LINE_LENGTH = 100;
-//============================
+//=============================
 
 char* charAppend(char* s, char c)
 {
