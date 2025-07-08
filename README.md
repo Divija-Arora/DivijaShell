@@ -17,3 +17,13 @@ A custom Linux shell built in C, supporting command execution, background proces
 ```bash
 gcc sh.c linkedlist.c linkedListForHistory.c utilities.c -o shell
 ./shell
+```
+## Example
+```bash
+shell@divija > ls
+shell@divija > mkdir test
+shell@divija > history
+```
+## Built By
+Divija Arora
+(Lover of clean terminals)
