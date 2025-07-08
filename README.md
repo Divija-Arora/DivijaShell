@@ -5,6 +5,11 @@ Designed and built a mini Linux shell in C, supporting command execution, backgr
 
 A custom Linux shell built in C, supporting command execution, background processes, and command history — with a personalized prompt.
 
+# Screenshot
+![Screenshot (175)](https://github.com/user-attachments/assets/bc52034d-62ba-47db-8e0f-6f46d26ab318)
+
+
+
 ## 🚀 Features
 - Custom prompt: `shell@divija >`
 - Command execution (`ls`, `mkdir`, `pwd`, etc.)
