@@ -1,73 +1,34 @@
-# Unix Shell
+# DivijaShell
+Designed and built a mini Linux shell in C, supporting command execution, background processing, signal handling, and custom prompts. 
 
-Shell is a special user program which accepts simple human readable commands from user and translates them so that kernel can understand them. Shell provides an interface to user to use operating system services.
+# shell@divija
 
-### Tech Stack
->This shell is developed completely in C.
+A custom Linux shell built in C, supporting command execution, background processes, and command history — with a personalized prompt.
 
-## Features and Commands
+# Screenshot
+![Screenshot (175)](https://github.com/user-attachments/assets/bc52034d-62ba-47db-8e0f-6f46d26ab318)
 
-#### 1. ```help```
-> Prints all the builtin commands.
 
-![Image of Yaktocat](/static/help.png)
 
-#### 2. ```cd```
-> Used to change the current working directory of the shell.
+## 🚀 Features
+- Custom prompt: `shell@divija >`
+- Command execution (`ls`, `mkdir`, `pwd`, etc.)
+- Background process handling with `bg`, `bglist`, `kill`
+- Built-in commands: `cd`, `exit`, `prompt`, `reset-prompt`
+- Command logging to `log.txt`
+- Developed & tested in Ubuntu (WSL)
 
-![Image of Yaktocat](/static/cd.png)
-#### 3. ```exit```
-> Used to exit the shell.
-
-![Image of Yaktocat](/static/exit.png)
-#### 4. ```bg```
-> Used to run a command in background.
-
-![Image of Yaktocat](/static/bg.png)
-#### 5. ```bglist```
-> Prints all the commands running in background.
-
-![Image of Yaktocat](/static/bglist.png)
-#### 6. ```kill```
-> Used to kill a process with specified *process id*.
-#### 7. ```history```
-> Prints all the commands which were given to the shell along with their validity (i.e. whether they were valid or not) in the current session.
-
-![Image of Yaktocat](/static/history.png)
-I have used a bit of concept of pipelining to implement this feature to send information from child processes to parent process. This command marks the invalid commands with RED color and valid commands with BLUE color.
-#### 8. ```prompt```
-> Used to change the prompt name of the shell.
-
-![Image of Yaktocat](/static/prompt.png)
-
-#### 9. ```reset-prompt```
-> Used to reset the prompt name of the shell to default.
-
-![Image of Yaktocat](/static/reset-prompt.png)
-
-## How to run ?
-
-Follow these steps to run the shell in your pc.
-
-1. Clone the repository.
-2. Run following commands in your terminal.
- 
-     ```
-     gcc sh.c linkedlist.c linkedlist.h utilities.h utilities.c linkedListForHistory.c linkedListForHistory.h
-     ```
-
-    ```
-    ./a.out
-    ```
-    This will open the shell in your terminal.
-
-**Note** - The commands given in step 2 assumes that you have gcc installed on your system.
-
-## Future Goals
-
-* Adding pipelining in the shell.
-
-* Enhance the ease of use of shell by implementing following -
-    * Command navigation using *up arrow* ⬆️ and *down arrow* ⬇️ key.
-    * Cursor navigation using *left arrow* ⬅️ and *right arrow* ➡️ key.
-    * Function of autocomplete using *tab* key.
+## 💻 How to Run
+```bash
+gcc sh.c linkedlist.c linkedListForHistory.c utilities.c -o shell
+./shell
+```
+## Example
+```bash
+shell@divija > ls
+shell@divija > mkdir test
+shell@divija > history
+```
+## Built By
+Divija Arora
+(Lover of clean terminals)
