@@ -1,0 +1,6 @@
+ls
+pwd
+mkdir testdir
+exit
+git init
+git remote add origin https://github.com/Divija-Arora/DivijaShell.git

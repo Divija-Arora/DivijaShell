@@ -9,8 +9,8 @@
 #include "linkedListForHistory.h"
 #include <pthread.h>
 
-char *shell_Name = "shell@pranaw > ";
-char *shell_temp_Name = "shell@pranaw > ";
+char *shell_Name = "shell@divija > ";
+char *shell_temp_Name = "shell@divija > ";
 
 int sh_cd(char **args)
 {
@@ -205,7 +205,11 @@ char *sh_read_line()
 			exit(EXIT_FAILURE);
 		}
 	}
-
+	FILE *log = fopen("log.txt", "a");
+	if (log != NULL) {
+		fprintf(log, "%s", line);
+		fclose(log);
+	}
 	return line;
 }
 
