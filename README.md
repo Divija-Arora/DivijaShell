@@ -18,6 +18,11 @@ A custom Linux shell built in C, supporting command execution, background proces
 - Command logging to `log.txt`
 - Developed & tested in Ubuntu (WSL)
 
+## Tech-Stack
+- Linux(Ubuntu , WSL)
+- C
+- GCC
+
 ## 💻 How to Run
 ```bash
 gcc sh.c linkedlist.c linkedListForHistory.c utilities.c -o shell
